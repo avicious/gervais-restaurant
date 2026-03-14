@@ -1,11 +1,12 @@
-import React from 'react';
-
-import './Navbar.css';
+import images from "../../constants/images";
+import "./Navbar.css";
 
 const Navbar = () => (
-  <div>
-    Navbar
-  </div>
+  <nav className="app__navbar">
+    <div className="app__navbar-logo">
+      <img src={images.gervais} alt="" />
+    </div>
+  </nav>
 );
 
 export default Navbar;

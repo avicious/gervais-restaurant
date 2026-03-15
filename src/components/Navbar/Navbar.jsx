@@ -1,5 +1,5 @@
 import { Menu, UtensilsCrossed } from "lucide-react";
-import images from "../../constants/images";
+import { images } from "../../constants";
 import "./Navbar.css";
 import { useState } from "react";
 

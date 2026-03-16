@@ -11,7 +11,7 @@ const SpecialMenu = () => (
 
     <div className="app__specialMenu-menu">
       <div className="app__specialMenu-menu_wine flex__center">
-        <p className="app__specialMenu_menu_heading">Wine & Beer</p>
+        <p className="app__specialMenu-menu_heading">Wine & Beer</p>
         <div className="app__specialMenu_menu_items">
           {data.wines.map((wine) => (
             <MenuItem key={wine.id} {...wine} />
@@ -24,7 +24,7 @@ const SpecialMenu = () => (
       </div>
 
       <div className="app__specialMenu-menu_cocktails flex__center">
-        <p className="app__specialMenu_menu_heading">Cocktail</p>
+        <p className="app__specialMenu-menu_heading">Cocktail</p>
         <div className="app__specialMenu_menu_items">
           {data.cocktails.map((cocktail) => (
             <MenuItem key={cocktail.id} {...cocktail} />

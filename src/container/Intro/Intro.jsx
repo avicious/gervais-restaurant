@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { Play, Pause } from 'lucide-react';
 import './Intro.css';
 
 const Intro = () => (

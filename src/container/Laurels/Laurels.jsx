@@ -1,11 +1,7 @@
-import React from 'react';
+import { images, data } from "../../constants";
+import { SubHeading, MenuItem } from "../../components";
+import "./Laurels.css";
 
-import './Laurels.css';
-
-const Laurels = () => (
-  <div>
-    Laurels
-  </div>
-);
+const Laurels = () => <div>Laurels</div>;
 
 export default Laurels;

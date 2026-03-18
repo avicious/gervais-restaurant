@@ -4,10 +4,10 @@ import "./Gallery.css";
 import { useRef } from "react";
 
 const imageArr = [
-  images.gallery01,
-  images.gallery02,
-  images.gallery03,
-  images.gallery04,
+  { id: 1, img: images.gallery01 },
+  { id: 2, img: images.gallery02 },
+  { id: 3, img: images.gallery03 },
+  { id: 4, img: images.gallery04 },
 ];
 
 const Gallery = () => {
@@ -40,13 +40,22 @@ const Gallery = () => {
       </div>
 
       <div className="app__gallery-images">
-        <div className="app__gallery-images_container" ref={scrollRef}></div>
+        <div className="app__gallery-images_container" ref={scrollRef}>
+          {imageArr.map(({ id, img }) => (
+            <div key={id} className="app__gallery-images_card flex__center">
+              <img src={img} alt="gallery" />
+              <Camera className="gallery__image-icon" />
+            </div>
+          ))}
+        </div>
         <div className="app__gallery-images_arrow">
           <ArrowLeft
+            size="2rem"
             className="gallery__arrow-icon"
             onClick={() => scroll("left")}
           />
           <ArrowRight
+            size="2rem"
             className="gallery__arrow-icon"
             onClick={() => scroll("right")}
           />

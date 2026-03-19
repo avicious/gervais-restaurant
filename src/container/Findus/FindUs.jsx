@@ -18,8 +18,8 @@ const FindUs = () => (
         >
           Opening Hours
         </p>
-        <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
-        <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+        <p className="p__opensans">Mon - Fri: 10:00 am - 10:00 pm</p>
+        <p className="p__opensans">Sat - Sun: 09:00 am - 09:00 pm</p>
       </div>
 
       <button

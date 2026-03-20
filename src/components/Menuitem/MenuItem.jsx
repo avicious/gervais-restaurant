@@ -1,4 +1,4 @@
-import "./MenuItem.css";
+import styles from "./MenuItem.module.css";
 
 const MenuItem = ({ title, price, tags }) => (
   <div className="app__menuitem">

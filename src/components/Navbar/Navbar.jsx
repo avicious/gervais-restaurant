@@ -1,6 +1,6 @@
 import { Menu, UtensilsCrossed } from "lucide-react";
 import { images } from "../../constants";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import { useState } from "react";
 
 const Navbar = () => {

@@ -1,4 +1,4 @@
-import './FooterOverlay.css';
+import styles from './FooterOverlay.module.css';
 
 const FooterOverlay = () => (
   <div className="app__footerOverlay">

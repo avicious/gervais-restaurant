@@ -1,6 +1,6 @@
 import { images } from "../../constants";
 import { Camera, ArrowLeft, ArrowRight } from "lucide-react";
-import "./Gallery.css";
+import styles from "./Gallery.module.css";
 import { useRef } from "react";
 
 const imageArr = [

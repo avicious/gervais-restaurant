@@ -1,4 +1,4 @@
-import "./Chef.css";
+import styles from "./Chef.module.css";
 import { images } from "../../constants";
 import { SubHeading } from "../../components";
 

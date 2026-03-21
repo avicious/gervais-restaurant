@@ -1,6 +1,6 @@
 import { FooterOverlay, Newsletter } from "../../components";
 import { images } from "../../constants";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => (
   <div className="app__footer section__padding">

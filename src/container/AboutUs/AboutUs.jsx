@@ -1,5 +1,5 @@
 import { images } from "../../constants";
-import "./AboutUs.css";
+import styles from "./AboutUs.module.css";
 
 const AboutUs = () => (
   <div

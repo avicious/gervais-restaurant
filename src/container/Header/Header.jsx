@@ -1,6 +1,6 @@
 import { images } from "../../constants";
 import { SubHeading } from "../../components";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => (
   <div className="app__header app__wrapper section__padding" id="home">

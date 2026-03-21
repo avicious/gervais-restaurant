@@ -1,6 +1,6 @@
 import { Play, Pause } from "lucide-react";
 import { meal } from "../../constants";
-import "./Intro.css";
+import styles from "./Intro.module.css";
 import { useRef, useState } from "react";
 
 const Intro = () => {

@@ -1,6 +1,6 @@
 import { images, data } from "../../constants";
 import { SubHeading, MenuItem } from "../../components";
-import "./SpecialMenu.css";
+import styles from "./SpecialMenu.module.css";
 
 const SpecialMenu = () => (
   <div className="app__specialMenu flex__center section__padding" id="menu">

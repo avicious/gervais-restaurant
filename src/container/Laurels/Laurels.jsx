@@ -3,27 +3,27 @@ import { SubHeading } from "../../components";
 import styles from "./Laurels.module.css";
 
 const Laurels = () => (
-  <div className="app__bg app__wrapper section__padding" id="awards">
-    <div className="app__wrapper_info">
+  <div className="app__bg wrapper padding" id="awards">
+    <div className="wrapper-info">
       <SubHeading title="Awards & Recognition" />
-      <h2 className="headtext__cormorant">Our Laurels</h2>
+      <h2 className="heading">Our Laurels</h2>
 
-      <div className="app__laurels_awards">
+      <div className={styles.awards}>
         {data.awards.map(({ id, imgUrl, title, subtitle }) => (
-          <div key={id} className="app__laurels_awards-card">
+          <div key={id} className={styles.card}>
             <img src={imgUrl} alt={title} />
-            <div className="app__laurels_awards-card_content">
-              <p className="p__cormorant" style={{ color: "#dcca87" }}>
+            <div className={styles.content}>
+              <p className="cormorant" style={{ color: "#dcca87" }}>
                 {title}
               </p>
-              <p className="p__cormorant">{subtitle}</p>
+              <p className="cormorant">{subtitle}</p>
             </div>
           </div>
         ))}
       </div>
     </div>
 
-    <div className="app__wrapper_img">
+    <div className="wrapper-img">
       <img src={images.laurels} alt="laurels" />
     </div>
   </div>

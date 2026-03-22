@@ -1,7 +1,8 @@
-import { Play, Pause } from "lucide-react";
-import { meal } from "../../constants";
-import styles from "./Intro.module.css";
 import { useRef, useState } from "react";
+import { Play, Pause } from "lucide-react";
+
+import styles from "./Intro.module.css";
+import { meal } from "../../constants";
 
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false);
@@ -18,7 +19,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="app__video">
+    <div className={styles.video}>
       <video
         ref={vidRef}
         src={meal}
@@ -27,11 +28,8 @@ const Intro = () => {
         controls={false}
         muted
       />
-      <div className="app__video-overlay flex__center">
-        <div
-          onClick={handleVideo}
-          className="app__video-overlay_circle flex__center"
-        >
+      <div className={`${styles.overlay} flex__center`}>
+        <div onClick={handleVideo} className={`${styles.circle} flex__center`}>
           {playVideo ? (
             <Pause color="#fff" size={30} />
           ) : (

@@ -7,7 +7,7 @@ const Header = () => (
     <div className="wrapper-info">
       <SubHeading title="Chase the new flavour" />
       <h1>The Key to Fine Dining</h1>
-      <p className="sans" style={{ margin: "2rem 0" }}>
+      <p className="opensans" style={{ margin: "2rem 0" }}>
         Excellence. Precision. Passion. These are the pillars that transform a
         simple meal into a masterclass of flavor and atmosphere. Discover the
         nuances of modern gastronomy, where traditional techniques meet

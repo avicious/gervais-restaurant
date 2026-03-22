@@ -16,18 +16,18 @@ const Navbar = () => {
 
       <ul className={styles.links}>
         {data.navLinks.map(({ id, link }) => (
-          <li key={id} className="sans">
+          <li key={id} className="opensans">
             <a href={`#${link}`}>{link}</a>
           </li>
         ))}
       </ul>
 
       <div className={styles.login}>
-        <a href="/" className="sans">
+        <a href="/" className="opensans">
           Log In / Register
         </a>
         <div />
-        <a href="/" className="sans">
+        <a href="/" className="opensans">
           Book Table
         </a>
       </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
             />
             <ul className={styles.mobileLinks}>
               {data.navLinks.map(({ id, link }) => (
-                <li key={id} className="sans">
+                <li key={id} className="opensans">
                   <a href={`#${link}`}>{link}</a>
                 </li>
               ))}

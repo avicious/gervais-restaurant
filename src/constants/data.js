@@ -1,5 +1,13 @@
 import images from "./images";
 
+const navLinks = [
+  { id: 1, link: "home" },
+  { id: 2, link: "about" },
+  { id: 3, link: "menu" },
+  { id: 4, link: "awards" },
+  { id: 5, link: "contact" },
+];
+
 const wines = [
   { id: 1, title: "Chapel Hill Shiraz", price: "$56", tags: "AU | Bottle" },
   { id: 2, title: "Catena Malbee", price: "$59", tags: "AU | Bottle" },
@@ -68,4 +76,4 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+export default { wines, cocktails, awards, navLinks };

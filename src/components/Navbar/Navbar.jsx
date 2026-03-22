@@ -1,7 +1,9 @@
-import { Menu, UtensilsCrossed } from "lucide-react";
-import { images } from "../../constants";
-import styles from "./Navbar.module.css";
 import { useState } from "react";
+import { Menu, UtensilsCrossed } from "lucide-react";
+
+import styles from "./Navbar.module.css";
+
+import { images, data } from "../../constants";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -13,29 +15,19 @@ const Navbar = () => {
       </div>
 
       <ul className={styles.links}>
-        <li className="p__opensans">
-          <a href="#home">Home</a>
-        </li>
-        <li className="p__opensans">
-          <a href="#about">About</a>
-        </li>
-        <li className="p__opensans">
-          <a href="#menu">Menu</a>
-        </li>
-        <li className="p__opensans">
-          <a href="#awards">Awards</a>
-        </li>
-        <li className="p__opensans">
-          <a href="#contact">Contact</a>
-        </li>
+        {data.navLinks.map(({ id, link }) => (
+          <li key={id} className="sans">
+            <a href={`#${link}`}>{link}</a>
+          </li>
+        ))}
       </ul>
 
       <div className={styles.login}>
-        <a href="#login" className="p__opensans">
+        <a href="/" className="sans">
           Log In / Register
         </a>
         <div />
-        <a href="/" className="p__opensans">
+        <a href="/" className="sans">
           Book Table
         </a>
       </div>
@@ -51,21 +43,11 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <ul className={styles.mobileLinks}>
-              <li className="p__opensans">
-                <a href="#home">Home</a>
-              </li>
-              <li className="p__opensans">
-                <a href="#about">About</a>
-              </li>
-              <li className="p__opensans">
-                <a href="#menu">Menu</a>
-              </li>
-              <li className="p__opensans">
-                <a href="#awards">Awards</a>
-              </li>
-              <li className="p__opensans">
-                <a href="#contact">Contact</a>
-              </li>
+              {data.navLinks.map(({ id, link }) => (
+                <li key={id} className="sans">
+                  <a href={`#${link}`}>{link}</a>
+                </li>
+              ))}
             </ul>
           </div>
         )}

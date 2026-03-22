@@ -3,32 +3,33 @@ import { images } from "../../constants";
 import { SubHeading } from "../../components";
 
 const Chef = () => (
-  <div className="app__bg app__wrapper section__padding">
-    <div className="app__wrapper_img app__wrapper_img-reverse">
+  <div className="app__bg wrapper padding">
+    <div className="wrapper-img wrapper-img-reverse">
       <img src={images.chef} alt="chef" />
     </div>
 
-    <div className="app__wrapper_info">
+    <div className="wrapper-info">
       <SubHeading title="Chef's Word" />
-      <h2 className="headtext__cormorant">What We Believe In</h2>
+      <h2 className="heading">What We Believe In</h2>
 
-      <div className="app__chef-content">
-        <div className="app__chef-content_quote">
+      <div className={styles.content}>
+        <div className={styles.quote}>
           <img src={images.quote} alt="quote" />
-          <p className="p__opensans">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          <p className="opensans">
+            We believe that the foundation of excellence lies in
           </p>
         </div>
-        <p className="p__opensans">
-          Quod sapiente rerum alias sed accusamus itaque beatae quo voluptatem
-          suscipit iure assumenda recusandae sequi nobis soluta voluptas labore,
-          cumque nostrum asperiores!
+        <p className="opensans">
+          the perfect harmony of seasonal integrity and meticulous
+          craftsmanship. To us, every guest deserves an atmosphere where
+          culinary artistry meets an unwavering commitment to genuine
+          hospitality.
         </p>
       </div>
 
-      <div className="app__chef-sign">
+      <div className={styles.sign}>
         <p>Kevin Luo</p>
-        <p className="p__opensans">Chef & Founder</p>
+        <p className="opensans">Chef & Founder</p>
         <img src={images.sign} alt="sign" />
       </div>
     </div>

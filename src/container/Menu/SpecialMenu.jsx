@@ -3,29 +3,29 @@ import { SubHeading, MenuItem } from "../../components";
 import styles from "./SpecialMenu.module.css";
 
 const SpecialMenu = () => (
-  <div className="app__specialMenu flex__center section__padding" id="menu">
-    <div className="app__specialMenu-title">
+  <div className={`${styles.container} flex__center padding`} id="menu">
+    <div className={styles.textAlign}>
       <SubHeading title="Menu That Fits Your Palette" />
-      <h2 className="headtext__cormorant">Today's Special</h2>
+      <h2 className="heading">Today's Special</h2>
     </div>
 
-    <div className="app__specialMenu-menu">
-      <div className="app__specialMenu-menu_wine flex__center">
-        <p className="app__specialMenu-menu_heading">Wine & Beer</p>
-        <div className="app__specialMenu_menu_items">
+    <div className={styles.menu}>
+      <div className={`${styles.wine} flex__center`}>
+        <p className={styles.title}>Wine & Beer</p>
+        <div className={styles.items}>
           {data.wines.map((wine) => (
             <MenuItem key={wine.id} {...wine} />
           ))}
         </div>
       </div>
 
-      <div className="app__specialMenu-menu_img">
+      <div className={styles.image}>
         <img src={images.menu} alt="menu" />
       </div>
 
-      <div className="app__specialMenu-menu_cocktails flex__center">
-        <p className="app__specialMenu-menu_heading">Cocktail</p>
-        <div className="app__specialMenu_menu_items">
+      <div className={`${styles.cocktail} flex__center`}>
+        <p className={styles.title}>Cocktail</p>
+        <div className={styles.items}>
           {data.cocktails.map((cocktail) => (
             <MenuItem key={cocktail.id} {...cocktail} />
           ))}
@@ -33,9 +33,7 @@ const SpecialMenu = () => (
       </div>
     </div>
     <div style={{ marginTop: "15px" }}>
-      <button type="button" className="custom__button">
-        View More
-      </button>
+      <button className="btn">View More</button>
     </div>
   </div>
 );

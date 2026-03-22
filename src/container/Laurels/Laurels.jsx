@@ -16,7 +16,6 @@ const Laurels = () => (
               <p className="cormorant" style={{ color: "#dcca87" }}>
                 {title}
               </p>
-              {/* <p className="cormorant">{subtitle}</p> */}
             </div>
           </div>
         ))}

@@ -1,17 +1,16 @@
 import SubHeading from "../SubHeading/SubHeading";
-
 import styles from "./Newsletter.module.css";
 
 const Newsletter = () => (
-  <div className="app__newsletter">
-    <div className="app__newsletter-heading">
+  <div className={styles.newsletter}>
+    <div className={styles.heading}>
       <SubHeading title="Newsletter" />
-      <h2 className="headtext__cormorant">Subscribe To Our Newsletter</h2>
-      <p className="p__opensans">And Never Miss Latest Updates!</p>
+      <h2 className="heading">Subscribe To Our Newsletter</h2>
+      <p className="opensans">And Never Miss Latest Updates!</p>
     </div>
-    <div className="app__newsletter-input flex__center">
+    <div className={`${styles.input} flex__center`}>
       <input type="email" placeholder="Enter your e-mail address" />
-      <button className="custom__button">Subscribe</button>
+      <button className="btn">Subscribe</button>
     </div>
   </div>
 );

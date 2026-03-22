@@ -9,14 +9,14 @@ const Laurels = () => (
       <h2 className="heading">Our Laurels</h2>
 
       <div className={styles.awards}>
-        {data.awards.map(({ id, imgUrl, title, subtitle }) => (
+        {data.awards.map(({ id, imgUrl, title }) => (
           <div key={id} className={styles.card}>
             <img src={imgUrl} alt={title} />
             <div className={styles.content}>
               <p className="cormorant" style={{ color: "#dcca87" }}>
                 {title}
               </p>
-              <p className="cormorant">{subtitle}</p>
+              {/* <p className="cormorant">{subtitle}</p> */}
             </div>
           </div>
         ))}

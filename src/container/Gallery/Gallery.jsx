@@ -1,7 +1,7 @@
+import { useRef } from "react";
+import styles from "./Gallery.module.css";
 import { images } from "../../constants";
 import { Camera, ArrowLeft, ArrowRight } from "lucide-react";
-import styles from "./Gallery.module.css";
-import { useRef } from "react";
 
 const imageArr = [
   { id: 1, img: images.gallery01 },
@@ -24,39 +24,36 @@ const Gallery = () => {
   };
 
   return (
-    <div className="app__gallery flex__center">
-      <div className="app__gallery-content">
-        <h2 className="headtext__cormorant">Photo Gallery</h2>
-        <p className="p__opensans" style={{ color: "#aaa", marginTop: "1rem" }}>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-          aliquam explicabo quos exercitationem odit at vitae omnis quis laborum
-          quaerat! Molestiae eos consequuntur praesentium non accusamus quos
-          nostrum hic nihil.
+    <div className={`${styles.gallery} flex__center`}>
+      <div className={styles.content}>
+        <h2 className="heading">Photo Gallery</h2>
+        <p className="opensans" style={{ color: "#aaa", marginTop: "1rem" }}>
+          A curated exploration of color, texture, and the precise architecture
+          of modern gastronomy, where every ingredient is a brushstroke. Step
+          inside a sanctuary of light and shadow, where the ambient glow and
+          meticulous design set the stage for an unforgettable evening.
         </p>
-        <button type="button" className="custom__button">
-          View More
-        </button>
+        <button className="btn">View More</button>
       </div>
 
-      <div className="app__gallery-images">
-        <div className="app__gallery-images_container" ref={scrollRef}>
+      <div className={styles.images}>
+        <div className={styles.container} ref={scrollRef}>
           {imageArr.map(({ id, img }) => (
-            <div key={id} className="app__gallery-images_card flex__center">
+            <div key={id} className={`${styles.card} flex__center`}>
               <img src={img} alt="gallery" />
-              <Camera className="gallery__image-icon" />
+              <Camera className={styles.icon} />
             </div>
           ))}
         </div>
-        <div className="app__gallery-images_arrow">
+        <div className={styles.arrow}>
           <ArrowLeft
             size="2rem"
-            className="gallery__arrow-icon"
+            className={styles.arrowIcon}
             onClick={() => scroll("left")}
           />
           <ArrowRight
             size="2rem"
-            className="gallery__arrow-icon"
+            className={styles.arrowIcon}
             onClick={() => scroll("right")}
           />
         </div>

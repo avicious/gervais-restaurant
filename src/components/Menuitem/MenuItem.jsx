@@ -1,23 +1,23 @@
 import styles from "./MenuItem.module.css";
 
 const MenuItem = ({ title, price, tags }) => (
-  <div className="app__menuitem">
-    <div className="app__menuitem-head">
-      <div className="app__menuitem-name">
-        <p className="p__cormorant" style={{ color: "#dcca87" }}>
+  <div className={styles.menu}>
+    <div className={styles.head}>
+      <div className={styles.name}>
+        <p className="cormorant" style={{ color: "#dcca87" }}>
           {title}
         </p>
       </div>
 
-      <div className="app__menuitem-dash" />
+      <div className={styles.dash} />
 
-      <div className="app__menuitem-price">
-        <p className="p__cormorant">{price}</p>
+      <div className={styles.price}>
+        <p className="cormorant">{price}</p>
       </div>
     </div>
 
-    <div className="app__menuitem-sub">
-      <p className="p__opensans" style={{ color: "#aaa" }}>
+    <div className={styles.sub}>
+      <p className="opensans" style={{ color: "#aaa" }}>
         {tags}
       </p>
     </div>

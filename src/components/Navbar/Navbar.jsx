@@ -7,12 +7,12 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="app__navbar">
-      <div className="app__navbar-logo">
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
         <img src={images.gervais} alt="gervais logo" />
       </div>
 
-      <ul className="app__navbar-links">
+      <ul className={styles.links}>
         <li className="p__opensans">
           <a href="#home">Home</a>
         </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="app__navbar-login">
+      <div className={styles.login}>
         <a href="#login" className="p__opensans">
           Log In / Register
         </a>
@@ -40,17 +40,17 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="app__navbar-smallscreen">
+      <div className={styles.mobile}>
         <Menu color="#fff" size={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+          <div className={`${styles.mobileOverlay} flex__center slide-bottom`}>
             <UtensilsCrossed
-              className="overlay__close"
+              className={styles.close}
               color="#dcca87"
               size={27}
               onClick={() => setToggleMenu(false)}
             />
-            <ul className="app__navbar-smallscreen_links">
+            <ul className={styles.mobileLinks}>
               <li className="p__opensans">
                 <a href="#home">Home</a>
               </li>

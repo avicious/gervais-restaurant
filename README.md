@@ -1,6 +1,8 @@
 # Gervais | Fine Dining Experience
 ![Project Screenshot](.github/assets/screenshot.png)
+
 A premium, fully responsive web application built with **React**, designed to provide an immersive digital experience for a luxury dining establishment.
+
 **Check out the live version of this project here:** https://gervais-dining.netlify.app/
 
 ## Features
